@@ -1,0 +1,44 @@
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info__list{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
+}
+.contact-info__block{
+    display: flex;
+    flex-direction:column;
+    max-height: 80px;
+    gap: 20px;
+}
+
+
+.contact-info__sub-block{
+    display: flex;
+    gap: 16px;
+}
+
+.contact-info__sub-value{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+/* стилі для кружечка між тітле */
+.contact-info__sub-value:not(:last-child)::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 4px;
+    background-color: #000;
+}
+.contact-info__info{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5em;
+}

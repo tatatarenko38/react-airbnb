@@ -1,0 +1,15 @@
+.attractions__block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.attractions__list{
+    display: flex;
+    flex-direction: column;   
+    gap: 24px;
+}
+
+.attractions__item{
+    color: #000;
+}

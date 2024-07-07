@@ -1,0 +1,12 @@
+.additional-properties{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.additional-properties__list{
+    display: grid;
+    gap: 12px;
+}
+
