@@ -38,95 +38,34 @@ export default function Amenities({
       <Heading border>Зручності</Heading>
 
       <ul className="amenities__list">
-        <ListItem>
-          {hasPool && (
-            <Fragment>
-              <Icon src={pool} />
-              <span>Басейн</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasGym && (
-            <Fragment>
-              <Icon src={gym} />
-              <span>Cпортивний зал</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasFreeBreakfast && (
-            <Fragment>
-              <Icon src={freeBreakfast} />
-              <span>Безкоштовний сніданок</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasFreeWiFi && (
-            <Fragment>
-              <Icon src={freeWiFi} />
-              <span>Безкоштовний Wi-Fi</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasParking && (
-            <Fragment>
-              <Icon src={parking} />
-              <span>Безкоштовний вуличний паркінг</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasPetsAllowed && (
-            <Fragment>
-              <Icon src={petsAllowed} />
-              <span>Дозволено розміщення з домашніми тваринами</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasAirportShuttle && (
-            <Fragment>
-              <Icon src={airportShuttle} />
-              <span>Трансфер до/з аеропорту</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasConciergeService && (
-            <Fragment>
-              <Icon src={conciergeService} />
-              <span>Консьєрж-сервіс</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasRoomService && (
-            <Fragment>
-              <Icon src={roomService} />
-              <span>Обслуговування номерів</span>
-            </Fragment>
-          )}
-        </ListItem>
-
-        <ListItem>
-          {hasChildFriendly && (
-            <Fragment>
-              <Icon src={childFriendly} />
-              <span>Підходить для дітей</span>
-            </Fragment>
-          )}
-        </ListItem>
+        {hasPool && <ListItem imageSrc={pool}> Басейн </ListItem>}
+        {hasGym && <ListItem imageSrc={gym}> Cпортивний зал </ListItem>}
+        {hasFreeBreakfast && (
+          <ListItem imageSrc={freeBreakfast}>Безкоштовний сніданок </ListItem>
+        )}
+        {hasFreeWiFi && (
+          <ListItem imageSrc={freeWiFi}>Безкоштовний Wi-Fi </ListItem>
+        )}
+        {hasParking && (
+          <ListItem imageSrc={parking}>Безкоштовний вуличний паркінг</ListItem>
+        )}
+        {hasPetsAllowed && (
+          <ListItem imageSrc={petsAllowed}>
+            Дозволено розміщення з домашніми тваринами
+          </ListItem>
+        )}
+        {hasAirportShuttle && (
+          <ListItem imageSrc={airportShuttle}>Трансфер до/з аеропорту</ListItem>
+        )}
+        {hasConciergeService && (
+          <ListItem imageSrc={conciergeService}> Консьєрж-сервіс </ListItem>
+        )}
+        {hasRoomService && (
+          <ListItem imageSrc={roomService}> Обслуговування номерів</ListItem>
+        )}
+        {hasChildFriendly && (
+          <ListItem imageSrc={childFriendly}>Підходить для дітей </ListItem>
+        )}
       </ul>
     </Box>
   );
